@@ -91,10 +91,10 @@ int main(int argc, char **argv) {
 	SetWindowsHookEx(WH_KEYBOARD_LL, keyboard_proc, module, (DWORD) 0);
 
 	MSG msg = {0};
-    while(GetMessage(&msg, NULL, 0, 0)) {
-        TranslateMessage(&msg);
-        DispatchMessage(&msg);
-    }
+    	while(GetMessage(&msg, NULL, 0, 0)) {
+        	TranslateMessage(&msg);
+        	DispatchMessage(&msg);
+    	}
 
-    return EXIT_SUCCESS;
+    	return EXIT_SUCCESS;
 }
